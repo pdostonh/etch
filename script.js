@@ -4,7 +4,7 @@ btnSide.innerText = "sides count";
 btnSide.addEventListener('click', () => {
     console.log('buttonFunc is working');
     let sideNumAsk = prompt('how many sides but less than 20');
-    if (sideNumAsk > sideNum || sideNumAsk < 1) {sideNum = sideNum}
+    if (sideNumAsk > sideNum || sideNumAsk < 1) {sideNum = 20}
         else {sideNum = sideNumAsk};
     play(sideNum);
 });
